@@ -9,7 +9,7 @@ A simple Python utility to:
 
 ---
 
-## Features
+## 🚀 Features
 - Convert `.jpg` and `.jpeg` images to `.pdf`
 - Merge multiple PDFs into a single file
 - GUI folder selection via `tkinter`
@@ -18,7 +18,7 @@ A simple Python utility to:
 
 ---
 
-## Limitations
+## 📦 Installation
 - **Compression is incomplete** → current output files are not reduced in size.
 - Only supports `.jpg` and `.jpeg` inputs (not `.png` or `.tiff` yet).
 - Orientation fixes depend on EXIF data — may not always behave as expected.
@@ -27,8 +27,11 @@ A simple Python utility to:
 
 ---
 
-## Dependencies
-Install the required libraries:
+## 🧩 Dependencies
+- Pillow  
+- pypdf  
+- pikepdf  
+- tkinter (bundled with Python)  
 
-```bash
-pip install pillow pypdf pikepdf
+- Install the required libraries:
+- pip install -r requirements.txt

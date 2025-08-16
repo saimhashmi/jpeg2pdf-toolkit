@@ -48,6 +48,8 @@ PDF Toolkit is a Python script designed to simplify PDF handling by:
 - Add CLI flags (`--merge`, `--compress`, `--split`).
 - Expand input support (PNG, TIFF).
 - Add output customization (filenames, destination folder).
+- Turn the toolkit into a GUI.
+- Isolate the functions to be able run seperately from each other
 
 ---
 
