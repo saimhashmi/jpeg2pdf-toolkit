@@ -1,28 +1,34 @@
-# PDF Compression Utility
+# PDF Toolkit (WIP)
 
 A simple Python utility to:
-1. Convert JPEG/JPG images to PDF
-2. Merge multiple PDFs into one
-3. Perform **lossless compression** of the final PDF
+- Convert JPEG images to PDF
+- Merge multiple PDFs into one
+- (Planned) Apply **lossless PDF compression** to reduce file size
+
+⚠️ **Note:** Compression is not fully implemented yet. Current compression attempts via `pikepdf` do not reduce size meaningfully. Future updates will explore advanced optimization techniques.
 
 ---
 
-## 🚀 Features
-- Select a folder with JPEGs/PDFs using a file dialog
-- Automatically converts JPEGs to PDFs
-- Merges all PDFs in the folder into one
-- Compresses the merged PDF using [pikepdf](https://pikepdf.readthedocs.io/)
+## Features
+- Convert `.jpg` and `.jpeg` images to `.pdf`
+- Merge multiple PDFs into a single file
+- GUI folder selection via `tkinter`
+- Clean, modular code with comments
+- Easy to extend (planned features: compression, splitting, watermarking)
 
 ---
 
-## 📦 Installation
-1. Clone this repository
-   cd into the directory
-   
-2. Create and activate a virtual environment
-   python -m venv venv
-   source venv/bin/activate     # Linux/Mac
-   venv\Scripts\activate        # Windows
+## Limitations
+- **Compression is incomplete** → current output files are not reduced in size.
+- Only supports `.jpg` and `.jpeg` inputs (not `.png` or `.tiff` yet).
+- Orientation fixes depend on EXIF data — may not always behave as expected.
+- No CLI arguments (GUI only at the moment).
+- Windows tested only — Linux/macOS compatibility not confirmed.
 
-3. Install dependencies
-   pip install -r requirements.txt
+---
+
+## Dependencies
+Install the required libraries:
+
+```bash
+pip install pillow pypdf pikepdf
